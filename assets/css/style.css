@@ -1,0 +1,567 @@
+@import 'normalize.css';
+@import 'font.css';
+
+html, body{
+	font-family: 'ralewaymedium';
+	font-size: 16px;
+}
+/*
+	dark grey: #3c3c3b
+*/
+/*index*/
+.container{
+	max-width: 1130px;
+}
+a{
+	color: #000;
+}
+a:hover{
+	color: #000;
+}
+button{
+	padding: 0;
+	margin: 0;
+	background: none;
+	outline: 0;
+	border: 0;
+}
+.nopadding {
+   padding-left: 0 !important;
+   padding-right: 0 !important;
+}
+ul, li{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+/*end index*/
+
+/*header*/
+header{
+	background: #3c3c3b;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 70px;
+	z-index: 10;
+	width: 100%;
+}
+header > h1{
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: normal;
+	letter-spacing: 4px;
+	font-size: 28px;
+	line-height: 40px;
+	box-sizing: border-box;
+}
+
+header > button{
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	margin: 0;
+	background: none;
+	border: 0;
+	outline: 0;
+}
+header > button img{
+	width: 30px;
+	height: 30px;
+}
+/*mobile*/
+.mobile_header{
+	background: #3c3c3b;
+	height: 70px;
+	z-index: 100;
+}
+.mobile_header  h1{
+	font-size: 12px;
+	letter-spacing: 2px;
+	margin-left: 50px;
+	line-height: 57px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+.mobile_header  button{
+	position: absolute;
+	left: 20px;
+	top: 15px;
+	width: 25px;
+	height: 25px;
+	padding: 0;
+	margin: 0;
+	background: none;
+	border: 0;
+	outline: 0;
+}
+.mobile_header button img{
+	width: 25px;
+	height: 25px;
+}
+
+/*end header*/
+
+/*menu*/
+nav{
+	position: fixed;
+	z-index: 100;
+	left: -320px;
+	top: 0;
+	width: 300px;
+	background: #fff;
+	-webkit-transition: left .3s ease-in-out;
+	-moz-transition: left .3s ease-in-out;
+	-ms-transition: left .3s ease-in-out;
+	-o-transition: left .3s ease-in-out;
+	transition: left .3s ease-in-out;
+	box-sizing: border-box;
+	height: 100%;
+	padding: 0 30px 0 30px;
+}
+nav.open{
+	left: 0;
+}
+nav button#close_menu{
+	position: absolute;
+	top: 25px;
+	right: 25px;
+}
+nav button#close_menu img{
+	width: 25px;
+	height: 25px;
+}
+nav .nav_container{
+	position: relative;
+	width: 100%;
+	margin-top: 130px;
+	box-sizing: border-box;
+}
+nav .logo{
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	width: 120px;
+	height: 54px;
+}
+nav .nav_container h4{
+	font-size: 12px;
+	text-transform: uppercase;
+}
+nav .nav_container .links {
+	font-size: 12px;
+	margin-top: 60px;
+	text-transform: uppercase;
+}
+nav .nav_container ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+nav .nav_container .scientists{
+	font-size: 16px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	margin-top: 30px;
+}
+nav .nav_container .scientists li{
+	padding-bottom: 15px;
+}
+nav .nav_container .social{
+	margin-top: 20px;
+}
+nav .nav_container .social img{
+	width: 24px;
+	height: 24px;
+	margin-right: 3px;
+}
+/*mobile*/
+.mobile_nav{
+	max-height: 0;
+	overflow: hidden;
+	-webkit-transition: max-height .3s ease-in-out;
+	-moz-transition: max-height .3s ease-in-out;
+	-ms-transition: max-height .3s ease-in-out;
+	-o-transition: max-height .3s ease-in-out;
+	transition: max-height .3s ease-in-out;
+}
+.mobile_nav.open{
+	max-height: 500px;
+}
+.mobile_nav > ul > li:last-child{
+	border: none;
+}
+.mobile_nav > ul > li{
+	border-bottom: 1px solid #3c3c3b;
+	font-size: 14px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.mobile_nav > ul li a{
+	width: 100%;
+	height: 100%;
+	display: block;
+	padding: 8px 20px;
+}
+.mobile_nav ul li ul.social li{
+	width: 25%;
+	text-align: center;
+	padding: 5px 0;
+	float: left;
+}
+.mobile_nav ul li ul.social li img{
+	width: 30px;
+	height: 30px;
+}
+/*end menu*/
+
+/*video container*/
+.video_container{
+	margin-top: 70px; /*only for desktop?*/
+	margin-bottom: 20px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center center;
+    height: 400px;
+    -webkit-transition: height .5s ease-in-out;
+	-moz-transition: height .5s ease-in-out;
+	-ms-transition: height .5s ease-in-out;
+	-o-transition: height .5s ease-in-out;
+	transition: height .5s ease-in-out;
+}
+.video_container .logo{
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+	opacity: 1;
+	-webkit-transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-ms-transition: opacity .5s ease-in-out;
+	-o-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
+}
+.video_container.opening .logo{
+	opacity: 0;
+}
+.video_container .subs{
+	position: absolute;
+	bottom: 20%;
+	left: 50%;
+	margin-left: -150px;
+	height: 100px;
+	width: 300px;
+	text-align: center;
+}
+.video_container .subs > button{
+	width: 100%;
+	background: none;
+	letter-spacing: 3px;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	color: #fff;
+	margin-bottom: 10px;
+	outline: 0;
+}
+.video_container .subs img{
+	width: 27px;
+	height: 27px;
+}
+
+.video_container .video{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin-left: -15px;
+	display: none;
+}
+.video_footer{
+	background: #3c3c3b;
+	position: fixed;
+	bottom: -80px;
+	left: 0;
+	right: 0;
+	height: 70px;
+	z-index: 10;
+	-webkit-transition: bottom .3s ease-in-out;
+	-moz-transition: bottom .3s ease-in-out;
+	-ms-transition: bottom .3s ease-in-out;
+	-o-transition: bottom .3s ease-in-out;
+	transition: bottom .3s ease-in-out;
+}
+.video_footer button{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 50px;
+	height: 50px;
+	color: #fff;
+}
+.video_footer.open{
+	bottom: 0;
+}
+.video_footer img{
+	height: 45px;
+	width: 100px;
+	margin: 10px;
+}
+/*mobile*/
+.video_mobile{
+	margin: 0px 0 15px;
+}
+.video_mobile #video_player_mobile{
+	width: 100%;
+	height: 200px;
+}
+
+/*end video container*/
+
+/*scientists slider*/
+.owl-carousel .item{
+	height: 200px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center center;
+}
+.owl-carousel .item .overlay{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.6);
+	color: #fff;
+	-webkit-transition: opacity .3s ease-in-out;
+	-moz-transition: opacity .3s ease-in-out;
+	-ms-transition: opacity .3s ease-in-out;
+	-o-transition: opacity .3s ease-in-out;
+	transition: opacity .3s ease-in-out;
+	opacity: 0;
+}
+.owl-carousel .item .overlay:hover{
+	opacity: 1;
+}
+.owl-carousel .item .overlay p{
+	font-size: 13px;
+	text-align: center;
+	width: 100%;
+	padding: 15px 25px 0;
+	line-height: 1.4em;
+	letter-spacing: 2px;
+}
+.owl-carousel .item .overlay .auth{
+	font-size: 16px;
+	text-align: center;
+	width: 100%;
+	line-height: 1.4em;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+.owl-carousel .item .overlay .title{
+	font-size: 11px;
+	text-align: center;
+	width: 100%;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.owl-carousel .item .overlay button{
+	position: absolute;
+	bottom: 10px;
+	right: 10%;
+	left: 10%;
+	border: 1px solid #fff;
+	width: 80%;
+	padding: 5px 0;
+	box-sizing: border-box;
+	text-transform: uppercase;
+}
+.owl-carousel .custom_container button{
+	position: absolute;
+	background: none;
+	border: 0;
+	z-index: 10;
+	top: 0;
+	height: 100%;
+	opacity: .5;
+	width: 70px;
+	outline: 0;
+	-webkit-transition: opacity .3s ease-in-out;
+	-moz-transition: opacity .3s ease-in-out;
+	-ms-transition: opacity .3s ease-in-out;
+	-o-transition: opacity .3s ease-in-out;
+	transition: opacity .3s ease-in-out;
+}
+.owl-carousel:hover button{
+	opacity: 1;
+}
+.owl-carousel button.prev_car{
+	left: 0px;
+}
+.owl-carousel button.next_car{
+	right: 0px;
+}
+/*end scientists slider*/
+
+/*intro text*/
+
+
+@media (min-width: 700px) { 
+	.block_1{
+		margin-top: 50px;
+	}
+}
+.block_1 h2{
+	text-align: center;
+	font-weight: normal;
+	letter-spacing: 2px;
+}
+.block_1 h3{
+	text-align: center;
+	font-weight: normal;
+	letter-spacing: 2px;
+	margin-top: 30px;
+}
+/*end intro text*/
+
+/*scientist part*/
+.header_img{
+	height: 250px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.scientist_content{
+	margin-top: 50px;
+}
+.scientist_content .profile_img img{
+	width: 100%;
+}
+.scientist_content .side_img img{
+	width: 100%;
+}
+.scientist_content .quote p{
+	font-size: 24px;
+	text-align: center;
+	width: 100%;
+	padding: 15px 20% 0;
+	line-height: 1.4em;
+	letter-spacing: 2px;
+}
+@media (max-width: 700px) { 
+	.scientist_content .quote p{
+		padding: 15px 0 0 !important;
+	}
+}
+.science_header{
+	margin-top: 50px;
+}
+.scientist_content img{
+	margin-bottom: 20px;
+}
+.scientist_content .quote .auth{
+	font-size: 20px;
+	text-align: center;
+	width: 100%;
+	line-height: 1.4em;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+.scientist_content .quote .title{
+	font-size: 14px;
+	text-align: center;
+	width: 100%;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.scientist_content .part_2{
+	margin-top: 50px;
+}
+.scientist_content div p:first-child{
+	margin-top: 0;
+}
+.scientist_content h2{
+	font-size: 28px;
+	margin: 0 0 20px 0;
+	text-transform: uppercase;
+	font-weight: normal;
+	letter-spacing: 4px;
+}
+.read_more_button{
+	border: 1px solid #3c3c3b;
+	padding: 5px 20px;
+	font-size: 14px;
+	box-sizing: border-box;
+	text-transform: uppercase;
+	margin: 10px 0;
+	float: left;
+}
+.scientist_social{
+	width: 300px;
+	display: inline-block;
+	float: right;
+	text-align: right;
+	margin: 10px 15px 10px 0;
+}
+.scientist_social .hash{
+	display: inline-block;
+	width: 150px;
+	line-height: 24px;
+	float: right;
+	font-size: 14px;
+}
+.scientist_social img{
+	width: 20px;
+	height: 20px;
+}
+
+.exerp{
+	max-height: 0;
+	-webkit-transition: max-height .3s ease-in-out;
+	-moz-transition: max-height .3s ease-in-out;
+	-ms-transition: max-height .3s ease-in-out;
+	-o-transition: max-height .3s ease-in-out;
+	transition: max-height .3s ease-in-out;
+}
+.exerp.open{
+	max-height: 1000px;
+}
+/*end scientist part*/
+
+/*footer*/
+footer{
+	position: relative;
+}
+footer .logo{
+	float: left;
+	margin: 30px;
+	width: 120px;
+	height: 54px;
+}
+footer .links{
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+}
+footer .links li{
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 12px;
+	margin-left: 10px;
+}
+/*end footer*/
