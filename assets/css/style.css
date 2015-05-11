@@ -569,3 +569,9 @@ footer .links li{
 	margin-left: 10px;
 }
 /*end footer*/
+
+@media screen and (max-height: 700px) {
+  nav .logo{
+  	display: none;
+  }
+}
