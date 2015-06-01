@@ -99,7 +99,7 @@ $(function(){
 		setTimeout(function(){
 			$('.video_container .video').show();
 			player.api('play');
-		}, 600);
+		}, 1100);
 		$('.video_container').addClass('opening');
 	});
 });
