@@ -8,6 +8,11 @@ html, body{
 /*
 	dark grey: #000
 */
+/*MvanEijgen*/
+.owl-carousel {
+	background: #000;
+}
+/*END MvanEijgen*/
 /*index*/
 .container{
 	max-width: 1130px;
